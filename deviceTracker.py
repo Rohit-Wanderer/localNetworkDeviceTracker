@@ -17,7 +17,7 @@ validMACs = ['<VAILD MAC ADDRESS OF DEVICE 1>','<VAILD MAC ADDRESS OF DEVICE 2>'
 invalidMACs = {}
 
 while 1:
-	out = subprocess.check_output(['sudo','nmap','-sP','192.168.0.0/24'])#4th parameter is your network address change accordingly
+	out = subprocess.check_output(['sudo','nmap','-sP','192.168.0.0/24'])#4th parameter is your network address, change accordingly
 	rawMAC=str(out).split('MAC Address: ')
 	flag=0
 	MAC=[]
